@@ -43,11 +43,19 @@
     ++countBtn.value
     priceHead.value += a
     prodEnterBasket.push(b)
-    console.log(prodEnterBasket)
   }
 
 </script>
 
-<style>
+<style >
+.main__products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
+@media(max-width: 1300px){
+  .main__products{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
 </style>

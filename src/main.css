@@ -26,3 +26,9 @@
     cursor: pointer;
     background: white;
 }
+
+@media(max-width: 1300px) {
+    .wrapper {
+        max-width: 1024px;
+    }
+}

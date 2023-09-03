@@ -19,10 +19,6 @@ body{
   background: #F5F7FA;
   height: 100%;
 }
-.main__products{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
 
 .main__title{
   color: #051D36;
@@ -36,17 +32,5 @@ body{
 
 main{
   padding: 31px;
-}
-.basket__error {
-  position: relative;
-}
-.basket__error::before,
-.basket__error::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>
