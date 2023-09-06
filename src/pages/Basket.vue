@@ -22,6 +22,7 @@
 
 <script setup>
   import { inject, ref } from 'vue';
+  import { useRouter, useRoute } from 'vue-router'
   import BasketProd from '../components/BasketProd.vue';
   import ModalBasket from '../components/ModalBasket.vue';
   import ModalInfo from '../components/ModalInfo.vue';
@@ -35,9 +36,20 @@
     showModalInfo.value = true
     showModal.value = false
   }
+
+  function reloadPage(){
+    location.reload(),
+    router.push({path:'/'})
+  }
+
+  const router = useRouter()
+    // const route = useRoute()
+
   function byAllProd(){
     showModal.value = true
     setTimeout( () => rotationModal(), 3000)
+    setTimeout( () => router.push({path:'/'}), 5000)
+    setTimeout( () => location.reload(), 5001)
   }
 </script>
 

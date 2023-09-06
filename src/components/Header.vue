@@ -2,7 +2,7 @@
   <div class="header" :class="{active: isActive}">
           <router-link 
             to="/" 
-            v-if="route.path == '/basket'" 
+            v-show="route.path == '/basket'" 
             class="header__toMain" 
             @click="() => {isActive = false}"
           >
@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { inject, ref } from 'vue'
+import { inject, ref, watch } from 'vue'
 import {useRoute} from 'vue-router'
 
 import createPrice from '../hooks/createPrice'
@@ -33,6 +33,14 @@ import createPrice from '../hooks/createPrice'
 
   const route = useRoute()
   const isActive = ref(false)
+  
+  watch(route, ()=> {
+    if(route.path === '/'){
+      isActive.value = false
+    }else{
+      isActive.value = true
+    }
+  })
 </script>
 
 <style scoped>
