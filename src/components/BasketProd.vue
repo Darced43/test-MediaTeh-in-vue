@@ -58,4 +58,15 @@ const prodEnterBasket = inject('prodEnterBasket')
     width: 11rem;
     height: auto;
   }
+  @media(max-width:470px){
+    .basket__prod__img{
+      width: 8rem;
+    }
+    .basket__name{
+      font-size: 18px;
+    }
+    .basket__price span{
+      font-size: 20px;
+    }
+  }
 </style>

@@ -65,18 +65,78 @@
   
   .modal-body {
     color: white;
-    font-size: 5rem;
+    font-size: 8rem;
     position: absolute;
     left: 30%;
     top: 40%;
-    // position: relative;
-    // width: 400px;
-    // margin: 0 auto;
-    // height: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // text-align: center;
+  }
+
+  @media(max-width:2500px){
+    .modal-body{
+      font-size: 7rem;
+    }
+  }
+  @media(max-width:2200px){
+    .modal-body{
+      left: 25%;
+    }
+  }
+  @media(max-width:1920px){
+    .modal-body{
+      left: 25%;
+      font-size: 6rem;
+    }
+  }
+  @media(max-width:1650px){
+    .modal-body{
+      left: 20%;
+      font-size: 6rem;
+    }
+  }
+  @media(max-width:1400px){
+    .modal-body{
+      left: 16%;
+    }
+  }
+  
+  @media(max-width:1260px){
+    .modal-body{
+      font-size: 5rem;
+    }
+  }
+  
+  @media(max-width:1024px){
+    .modal-body{
+      font-size: 4rem;
+      left: 20%;
+    }
+  }
+  @media(max-width:900px){
+    .modal-body{
+      font-size: 3rem;
+      left: 19%;
+    }
+  }
+  @media(max-width:650px){
+    .modal-body{
+      left: 13%;
+    }
+  }
+  @media(max-width:550px){
+    .modal-body{
+      font-size: 2rem;
+      left: 15%;
+    }
+  }
+  @media(max-width:380px){
+    .modal-body{
+      left: 12%;
+    }
+  }
+  @media(max-width:340px){
+    .modal-body{
+      left: 9%;
+    }
   }
   
   </style>

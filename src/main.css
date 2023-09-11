@@ -27,8 +27,20 @@
     background: white;
 }
 
+.product__btn:hover {
+    transition: 0.5s;
+    background: #d1d1d1;
+}
+
 @media(max-width: 1300px) {
     .wrapper {
         max-width: 1024px;
+    }
+}
+
+@media(max-width: 470px) {
+    .product__btn {
+        font-size: 14px;
+        padding: 5px;
     }
 }

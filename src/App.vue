@@ -17,7 +17,7 @@ body{
 
 .main{
   background: #F5F7FA;
-  height: 100%;
+  height: 100vh;
 }
 
 .main__title{
@@ -32,5 +32,11 @@ body{
 
 main{
   padding: 31px;
+}
+
+@media(max-width:470px){
+  main{
+    padding: 10px;
+  }
 }
 </style>

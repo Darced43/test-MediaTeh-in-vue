@@ -69,14 +69,6 @@ const props = defineProps({
   position: absolute;
   left: 30%;
   top: 40%;
-  // position: relative;
-  // width: 400px;
-  // margin: 0 auto;
-  // height: 100%;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // text-align: center;
 }
 
 @keyframes noise-anim {
@@ -233,7 +225,7 @@ const props = defineProps({
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
-}/*# sourceMappingURL=styles.css.map */
+}
 
 @media(max-width: 3000px){
   .modal-body{
@@ -272,6 +264,50 @@ const props = defineProps({
   .modal-body{
     left: 12%;
     font-size: 3rem;
+  }
+  .modal-body:after {
+    font-size: 47px;
+  }
+  .modal-body::before{
+    font-size:47px;
+  }
+}
+@media(max-width: 900px){
+  .modal-body{
+    left:9%;
+  }
+}
+@media(max-width: 820px){
+  .modal-body{
+    font-size: 2rem;
+    left:20%;
+  }
+  .modal-body:after {
+    font-size: 31px;
+  }
+  .modal-body::before{
+    font-size:31px;
+  }
+}
+@media(max-width: 650px){
+  .modal-body{
+    left: 11%;
+  }
+}
+@media(max-width: 550px){
+  .modal-body{
+    left: 6%;
+  }
+}
+@media(max-width: 500px){
+  .modal-body{
+    text-align: center;
+  }
+  .modal-body:after {
+    text-align: center;
+  }
+  .modal-body::before{
+    text-align: center;
   }
 }
 </style>

@@ -51,7 +51,7 @@
             >{{ createPrice(prod.price) }} ₽
           </div>
         </div>
-        <div>
+        <div class="block__product__btn">
           <button 
             class="product__btn"
             @click="$emit('addCount', prod.price, prodEnter)"
@@ -149,10 +149,44 @@ line-height: 32px; /* 123.077% */
   color: #F44336;
 }
 
-.product__btn:hover {
-  transition: 0.5s;
-  background: #d1d1d1;
+@media(max-width:660px){
+  .product{
+    padding:10px;
+    gap:5px;
+  }
 }
-
+@media(max-width:470px){
+  .product{
+    flex-direction: row;
+    padding: 5px;
+  }
+  .product__block{
+    height: auto;
+  }
+  .product__price{
+    justify-content: center;
+  }
+.product__block__image{
+    width: 120px;
+}
+.product__info__description{
+  font-size: 12px;
+  line-height: 18px;
+  width: 143px;
+}
+.product__price__first{
+  font-size: 12px;
+  margin-right: 4px;
+}
+.product__price__discount{
+  padding: 3px 4px;
+}
+.prduct__price__total.discount{
+  font-size: 18px;
+}
+.block__product__btn{
+  display: flex;
+}
+}
 
 </style>

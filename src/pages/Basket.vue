@@ -43,7 +43,6 @@
   }
 
   const router = useRouter()
-    // const route = useRoute()
 
   function byAllProd(){
     showModal.value = true
@@ -62,5 +61,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 48px;
+  }
+  @media(max-width:800px){
+    .text__info{
+      font-size: 50px;
+    }
   }
 </style>
