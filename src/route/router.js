@@ -6,7 +6,7 @@ import MainContent from '../pages/MainContent.vue'
 export default  createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/', component: MainContent},
+        { path: '/darced43.github.io/test-MediaTeh-in-vue/', component: MainContent},
         { path: '/basket', component: Basket },
       ]
 })
