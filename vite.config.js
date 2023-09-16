@@ -8,6 +8,6 @@ export default defineConfig({
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/your-github-repo/' // note the trailing slash
+  ? '/test-MediaTeh-in-vue/' 
   : '/',
 }
